@@ -16,11 +16,11 @@ public class MySQLDAOManager {
 
     public Connection conectar(){
         try {
-            Class.forName(driver);
+            //Class.forName(driver);
             cx = DriverManager.getConnection(url, user, password);
             System.out.println("Se conecta");
 
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (/*ClassNotFoundException |*/ SQLException e) {
             System.out.println("No se conecta");
             throw new RuntimeException(e);
         }

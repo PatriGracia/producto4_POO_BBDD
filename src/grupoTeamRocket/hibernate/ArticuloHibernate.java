@@ -3,7 +3,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="cliente")
+@Table(name="articulo")
 public class ArticuloHibernate {
 
 

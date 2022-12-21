@@ -35,7 +35,7 @@ public class MySQLArticuloDAO implements ArticuloDAO {
     }
     @Override
     public void insertar(Articulo a) throws DAOException{
-        PreparedStatement stat = null;
+       PreparedStatement stat = null;
         try {
             conn = new MySQLDAOManager().conectar();
             stat = conn.prepareStatement(INSERT);
